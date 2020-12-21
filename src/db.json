@@ -1,0 +1,16 @@
+{
+    "post":[
+        {
+            "id":1,
+            "author":"Volodymyr Hordiienko",
+            "title":"Flux pattern in React",
+            "text":"Главная идея в использовании диспетчера для организации прямого"
+        },
+        {
+            "id":2,
+            "author":"Vadim Harlamenko",
+            "title":"Siemens TIA Portal",
+            "text":"Комплексная среда для разработки решений"
+        }
+    ]
+}
