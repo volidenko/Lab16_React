@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import NavMenu from './pages/NavMenu';
 import Main from './pages/Main';
+import Posts from './pages/Posts';
 import NotFound from './pages/NotFound';
 import PostList from './pages/PostList';
 import AddPost from './pages/AddPost';
