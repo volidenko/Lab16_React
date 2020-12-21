@@ -3,7 +3,7 @@ import dispatcher from "../appDispatcher";
 import actionTypes from "../action/actionTypes";
 
 const CHANGE_EVENT="change";
-let post=[];
+let _posts=[];
 
 class PostStore extends EventEmitter{
     addChangeListener(callback){
@@ -22,6 +22,18 @@ class PostStore extends EventEmitter{
 
 const postStore=new PostStore();
 
-// dispatcher.register(action=>{
-//     switch
-// }
+dispatcher.register(action=>{
+    switch(action.actionTypes){
+        case actionTypes.GET_POSTS: 
+        _posts = action.posts;
+        postStore.emitChange();
+        break;
+        case actionTypes.ADD_POST:
+            _posts.push(action.posts);
+            postStore.emitChange();
+            break;
+        default: 
+    }
+})
+
+export default postStore;
