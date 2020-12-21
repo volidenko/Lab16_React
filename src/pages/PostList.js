@@ -1,6 +1,8 @@
-
+import React, {useState, useEffect} from "react";
+//import data from "../db.json";
 import Posts from "./Posts.js"
-import data from "../db.json";
+import postStore from "../stores/postStore";
+import {getPosts} from "../actions/postActions";
 export default function PostList() {
     // const [posts, setPosts]=useState([]);
     // useEffect(()=>{
@@ -9,6 +11,16 @@ export default function PostList() {
     // },
     // []);
     const [posts, setPosts]=useState(poststore.getPosts());
+    useEffect(()=>{
+        postStore.addChangeListener(onChange);
+        if(postStore.getPosts().length===0)
+        getPosts();
+        return postStore.removeChangeListener(onChange);
+    }, []);
+
+    const onChange = ()=>{
+        setPosts(postStore.getPosts());
+    }
     return <>
     <Post posts={posts}></Post>
     </>
