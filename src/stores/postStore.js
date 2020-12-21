@@ -1,16 +1,16 @@
 import {EventEmitter} from "events";
 import dispatcher from "../appDispatcher";
-import actionTypes from "../action/actionTypes";
+import actionTypes from "../actions/actionTypes";
 
 const CHANGE_EVENT="change";
 let _posts=[];
 
 class PostStore extends EventEmitter{
     addChangeListener(callback){
-        this.on(CHANGE_EVENT, callback)
+        this.on(CHANGE_EVENT, callback);
     }
     removeChangeListener(callback){
-        this.removeAllListener(CHANGE_EVENT, callback);
+        this.removeListener(CHANGE_EVENT, callback);
     }
     emitChange(){
         this.emit(CHANGE_EVENT);

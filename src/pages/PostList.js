@@ -10,7 +10,7 @@ export default function PostList() {
     //     console.log("Запрос к API/файлу");
     // },
     // []);
-    const [posts, setPosts]=useState(poststore.getPosts());
+    const [posts, setPosts]=useState(postStore.getPosts());
     useEffect(()=>{
         postStore.addChangeListener(onChange);
         if(postStore.getPosts().length===0)
@@ -22,6 +22,6 @@ export default function PostList() {
         setPosts(postStore.getPosts());
     }
     return <>
-    <Post posts={posts}></Post>
+    <Posts posts={posts}></Posts>
     </>
 }

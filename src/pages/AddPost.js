@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {addPost} from "../action/postActions";
+import {addPost} from "../actions/postActions";
 export default function AddPost() {
     const [id, setId]=useState(1);
     const [title,setTitle]=useState("");
