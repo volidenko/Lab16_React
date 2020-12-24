@@ -5,7 +5,7 @@ import data from "../db.json";
 export function getPosts(){
     appDispatcher.dispatch({
         actionTypes: actionTypes.GET_POSTS,
-        post: data["posts"]
+        posts: data["posts"]
     })
 }
 
