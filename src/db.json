@@ -1,16 +1,17 @@
 {
-    "posts":[
+    "posts":
+    [
         {
-            "id":1,
-            "author":"Volodymyr Hordiienko",
-            "title":"Lorem ipsum dolor sit amet",
-            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel volutpat lectus. Nunc eget tempus massa, id commodo nibh. Vestibulum lacus ex, aliquet ut ullamcorper lobortis, vehicula a nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dictum tincidunt nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum nec vestibulum felis. Aenean facilisis metus ut arcu pharetra malesuada."
+            "id": 1,
+            "author": "Volodymyr Hordiienko",
+            "title": "Lorem ipsum dolor sit amet",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel volutpat lectus. Nunc eget tempus massa, id commodo nibh. Vestibulum lacus ex, aliquet ut ullamcorper lobortis, vehicula a nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dictum tincidunt nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum nec vestibulum felis. Aenean facilisis metus ut arcu pharetra malesuada."
         },
         {
-            "id":2,
-            "author":"Ivan Ivanov",
-            "title":"Vestibulum sagittis euismod sem id aliquet",
-            "text":"Vestibulum sagittis euismod sem id aliquet. Nullam eu consequat enim, et dignissim ipsum. Integer vel placerat massa. Duis gravida leo dui, suscipit volutpat sapien pulvinar vitae. Phasellus id arcu ac leo condimentum auctor id at massa. Etiam elementum viverra finibus. Ut viverra elit id gravida aliquet. Maecenas dictum, leo facilisis dignissim finibus, massa orci ultricies ante, dictum gravida purus sem ut lacus. Aenean facilisis quam eget nisl vehicula, nec bibendum augue pretium. Integer urna ipsum, auctor non turpis in, venenatis congue arcu. In ac purus augue."
+            "id": 2,
+            "author": "Ivan Ivanov",
+            "title": "Vestibulum sagittis euismod sem id aliquet",
+            "text": "Vestibulum sagittis euismod sem id aliquet. Nullam eu consequat enim, et dignissim ipsum. Integer vel placerat massa. Duis gravida leo dui, suscipit volutpat sapien pulvinar vitae. Phasellus id arcu ac leo condimentum auctor id at massa. Etiam elementum viverra finibus. Ut viverra elit id gravida aliquet. Maecenas dictum, leo facilisis dignissim finibus, massa orci ultricies ante, dictum gravida purus sem ut lacus. Aenean facilisis quam eget nisl vehicula, nec bibendum augue pretium. Integer urna ipsum, auctor non turpis in, venenatis congue arcu. In ac purus augue."
         }
     ]
 }

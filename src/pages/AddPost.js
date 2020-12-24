@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {addPost} from "../actions/postActions";
+import {addPost} from "../actions/postActions"
 export default function AddPost() {
     const [id, setId]=useState(1);
     const [title,setTitle]=useState("");
@@ -8,6 +8,7 @@ export default function AddPost() {
     const handleSubmit = e => {
         e.preventDefault();
         addPost({id, title, author, text});
+        //
     }
     const handleChange = e => {
         switch (e.target.name) {

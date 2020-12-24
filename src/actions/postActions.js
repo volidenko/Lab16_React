@@ -1,4 +1,4 @@
-import actionTypes from "./actionTypes";
+import actionTypes from "../actions/actionTypes";
 import appDispatcher from "../appDispatcher";
 import data from "../db.json";
 

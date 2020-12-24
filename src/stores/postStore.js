@@ -11,7 +11,7 @@ class PostStore extends EventEmitter{
     }
     removeChangeListener(callback){
         this.removeListener(CHANGE_EVENT, callback);
-    }
+    } 
     emitChange(){
         this.emit(CHANGE_EVENT);
     }

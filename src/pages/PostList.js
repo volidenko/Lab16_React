@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 //import data from "../db.json";
-import Posts from "./Posts.js"
+import Posts from "./Posts.js";
 import postStore from "../stores/postStore";
 import {getPosts} from "../actions/postActions";
 export default function PostList() {
@@ -10,6 +10,7 @@ export default function PostList() {
     //     console.log("Запрос к API/файлу");
     // },
     // []);
+
     const [posts, setPosts]=useState(postStore.getPosts());
     useEffect(()=>{
         postStore.addChangeListener(onChange);
@@ -21,6 +22,7 @@ export default function PostList() {
     const onChange = ()=>{
         setPosts(postStore.getPosts());
     }
+
     return <>
     <Posts posts={posts}></Posts>
     </>
